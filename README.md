@@ -1,5 +1,7 @@
 # vstest.diag - Diagnostic tool for the Visual Studio Unit Test platform
 
+[![Build status](https://ci.appveyor.com/api/projects/status/spe9wpff038fcb6p?svg=true)](https://ci.appveyor.com/project/codito/vstest-diag)
+
 This tool enables diagnostic log collection for various unit test framework components. 
 
 It will collect following logs:
