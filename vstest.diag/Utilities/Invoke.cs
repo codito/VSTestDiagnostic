@@ -1,4 +1,4 @@
-﻿namespace vstest.diag.Utilities
+﻿namespace VSTest.Diag.Utilities
 {
     using System;
     using System.Diagnostics;

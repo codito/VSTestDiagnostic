@@ -7,7 +7,7 @@
     <ProjectGuid>{8AF4B5B5-13ED-4C38-BCBB-A2E44C809EF8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>vstest.diag</RootNamespace>
+    <RootNamespace>VSTest.Diag</RootNamespace>
     <AssemblyName>vstest.diag</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

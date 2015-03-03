@@ -1,11 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-
-namespace vstest.diag
+﻿namespace VSTest.Diag
 {
-    using vstest.diag.Utilities;
+    using System;
+    using System.IO;
+    using System.Linq;
+    using System.Reflection;
+
+    using VSTest.Diag.Utilities;
 
     class Program
     {
@@ -28,7 +28,7 @@ namespace vstest.diag
             switch (taskRun)
             {
                 default:
-                // case DiagnosticTask.Help:
+                    // case DiagnosticTask.Help:
                     PrintHelp();
                     break;
                 case DiagnosticTask.EnableLogs:

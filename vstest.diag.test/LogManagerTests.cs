@@ -1,4 +1,4 @@
-﻿namespace vstest.diag.test
+﻿namespace VSTest.Diag.Tests
 {
     using System;
     using System.IO;
@@ -7,7 +7,7 @@
 
     using FluentAssertions;
 
-    using vstest.diag.Utilities;
+    using VSTest.Diag.Utilities;
 
     [TestClass]
     public class LogManagerTests

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace vstest.diag.Utilities
+namespace VSTest.Diag.Utilities
 {
     public static class Constants
     {

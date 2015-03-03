@@ -1,4 +1,4 @@
-﻿namespace vstest.diag
+﻿namespace VSTest.Diag
 {
     public enum DiagnosticTask
     {

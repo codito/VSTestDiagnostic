@@ -1,7 +1,8 @@
-﻿namespace vstest.diag.test
+﻿namespace VSTest.Diag.Tests
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using FluentAssertions;
+
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class ArgumentParserTests

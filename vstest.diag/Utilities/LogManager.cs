@@ -1,4 +1,4 @@
-﻿namespace vstest.diag
+﻿namespace VSTest.Diag
 {
     using System;
     using System.IO;
@@ -10,7 +10,6 @@
         /// Log file name for the tool.
         /// </summary>
         private const string LogFile = "DiagnosticsLog.txt";
-
 
         public static void WriteLog(string strMessage)
         {

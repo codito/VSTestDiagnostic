@@ -6,8 +6,8 @@
     <ProjectGuid>{587A7A73-CBAC-4173-9F87-00ADCC05682D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>vstest.diag.test</RootNamespace>
-    <AssemblyName>vstest.diag.test</AssemblyName>
+    <RootNamespace>VSTest.Diag.Tests</RootNamespace>
+    <AssemblyName>vstest.diag.tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NonShipping>true</NonShipping>
