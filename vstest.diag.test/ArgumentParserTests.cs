@@ -47,6 +47,13 @@
             output.Should().Be(DiagnosticTask.RunTests);
         }
 
+        [TestMethod]
+        public void ArgumentParserParseShouldParseArgumentsWithoutCaseSensitivity()
+        {
+            CreateAndParseArgumentsOutput("/rUnTesTs").Should().Be(DiagnosticTask.RunTests);
+            CreateAndParseArgumentsOutput("/dIsaBleLogs").Should().Be(DiagnosticTask.DisableLogs);
+        }
+
         private static DiagnosticTask CreateAndParseArgumentsOutput(string args)
         {
             return new ArgumentParser().Parse(args);

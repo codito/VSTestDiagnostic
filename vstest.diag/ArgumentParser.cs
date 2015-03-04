@@ -5,7 +5,7 @@
         public DiagnosticTask Parse(string args)
         {
             var t = DiagnosticTask.Help;
-            switch (args)
+            switch (args.ToLower())
             {
                 default:
                 case "/Help":
