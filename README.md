@@ -2,20 +2,22 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/spe9wpff038fcb6p?svg=true)](https://ci.appveyor.com/project/codito/vstest-diag)
 
-This tool enables diagnostic log collection for various unit test framework components. 
+This tool enables diagnostic log collection for various unit test framework components. It modifies configuration files (*.exe.config) of several binaries in VS install directory, please remember to run `vstest.diag /disableLogs` after log collection is complete. 
 
-It will collect following logs:
-
->	DiagnosticsLog.txt (The log for this tool)
->	WCFEtwTrace.etl (WCF log)
->	vstest.executionengine.TpTrace.log 
->	vstest.executionengine.x86.TpTrace.log 
->	vstest.discoveryengine.TpTrace.log
->	vstest.discoveryengine.x86.TpTrace.log
->	devenv.TpTrace
+## Installation
+Get the latest release from [here](https://github.com/codito/vstest.diag/releases). Unzip it to `c:\tmp\vstest.diag`.
 
 ## Usage
-`vstest.diag (/EnableLogs|/DisableLogs)`
+
+```
+$ # open VS Developer Command Prompt
+$ cd c:\tmp\vstest.diag
+$ vstest.diag /enableLogs
+$ # run your tests
+$ # for example, vstest.console.exe mytests.dll /settings:my.runsettings /logger:trx
+$ vstest.diag /disableLogs
+$ # analyze/share the logs for diagnosis
+```
 
 ### Options
 
@@ -26,15 +28,13 @@ It will collect following logs:
     Leaving logs enabled will cause slow performance.
 
 /DisableLogs    Disables the logs if enabled earlier.
-/Help           Show help
 
-## Example
-Below is a typical usage of this tool. All commands are run from Administrator command prompt.
+# Share the logs
+Copy following logs from %temp% and share them for diagnosis:
 
-    $ vstest.diag.exe /enablelogs
-    $ vstest.console.exe mytests.dll # run your unit tests that reproduce a bug in the product
-    $ vstest.diag.exe /disablelogs
-    $ # copy logs from %temp%
+* DiagnosticsLog.txt (The log for this tool)
+* WCFEtwTrace.etl (WCF log)
+* *.TpTrace.log
 
 ## License
 Apache License v2.0.
