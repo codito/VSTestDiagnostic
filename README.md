@@ -2,7 +2,9 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/spe9wpff038fcb6p?svg=true)](https://ci.appveyor.com/project/codito/vstest-diag)
 
-This tool enables diagnostic log collection for various unit test framework components. It modifies configuration files (*.exe.config) of several binaries in VS install directory, please remember to run `vstest.diag /disableLogs` after log collection is complete. 
+This tool enables diagnostic log collection for various unit test framework components.
+
+**NOTE: vstest.diag modifies configuration files (*.exe.config) of several binaries in VS install directory, please remember to run `vstest.diag /disableLogs` after log collection is complete.**
 
 ## Installation
 Get the latest release from [here](https://github.com/codito/vstest.diag/releases). Unzip it to `c:\tmp\vstest.diag`.
